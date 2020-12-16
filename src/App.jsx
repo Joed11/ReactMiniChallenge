@@ -7,21 +7,29 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      facts: "",
+      facts: animalFacts,
       favorite: "",
     };
+
+    this.handleFavoriteClick = this.handleFavoriteClick.bind(this);
   }
 
-  // TODO: when the favorite button is clicked in a Fact component, the state should get updated with the name of the animal that was favorited
-  handleFavoriteClick(e) {}
+  handleFavoriteClick(e) {
+    // console.log(e.target.value);
+    this.setState({
+      favorite: e.target.value,
+    });
+  }
 
-  // NOTE: In order to maintain CSS styling, do not alter the existing tags or their classNames
   render() {
     return (
       <div className="main">
         <h1 className="heading">Welcome to Animal Facts!</h1>
-        <h2 className="fave">My Favorite Animal: {}</h2>
-        <FactsList />
+        <h2 className="fave">My Favorite Animal: {this.state.favorite}</h2>
+        <FactsList
+          facts={this.state.facts}
+          handleFavoriteClick={this.handleFavoriteClick}
+        />
       </div>
     );
   }

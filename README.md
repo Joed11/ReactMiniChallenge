@@ -8,8 +8,6 @@ Fill in the the incomplete files to complete a React app that displays random an
 
 ## Requirements
 
-It is reccomended to complete the requirements in an order similar to the outline below:
-
 | ORDER | DESCRIPTION                                                                                                                                                     |
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1     | Create a class component, App, in the App.jsx file which holds the animal facts (from data.jsx file) in state                                                   |

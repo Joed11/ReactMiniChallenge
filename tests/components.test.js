@@ -3,7 +3,8 @@ import App from "../src/App.jsx";
 import FactsList from "../src/FactsList.jsx";
 import Fact from "../src/Fact.jsx";
 import animalFacts from "../src/data.jsx";
-import { shallow, configure } from "enzyme";
+import { shallow, mount } from "enzyme";
+import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
 configure({ adapter: new Adapter() });

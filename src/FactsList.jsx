@@ -1,10 +1,15 @@
 import React from "react";
 // TO DO: Create a FactsList functional component which maps through all of the animal facts in data.jsx and returns each item as a Fact component
 
-// NOTE: In order to maintain CSS styling, do not alter the existing tags or their classNames
-const FactsList = () => (
+const FactsList = ({ facts, handleFavoriteClick }) => (
   <div className="factsList">
-    <Fact />
+    {facts.map((item) => (
+      <Fact
+        fact={item}
+        key={item.id}
+        handleFavoriteClick={handleFavoriteClick}
+      />
+    ))}
   </div>
 );
 
