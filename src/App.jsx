@@ -1,4 +1,6 @@
 import React from "react";
+import animalFacts from "./data.jsx";
+import FactsList from "./FactsList.jsx";
 // TO DO: Create an App class component which renders FactsList
 
 // Before jumping into coding, check out the README for some reccomendations on the order to complete the challenge in and helpful hints
